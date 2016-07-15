@@ -1,4 +1,3 @@
-function easingInOut( max, current, alpha ){
-	var point = (current/max) * (alpha*Math.PI);
-	return Math.sin( point + Math.PI/2);
+function easingInOut( max, current ){
+	return Math.sin( ((current/max) * Math.PI) + Math.PI/2);
 }
